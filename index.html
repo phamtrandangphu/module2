@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Preview</title>
+    <style>
+        #image {
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            background-size: cover;
+            text-align: center;
+            line-height: 200px;
+            margin-bottom: 10px;
+        }
+        .preview {
+            width: 100px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">Hover over an image below to display here.</div>
+    <img class="preview" src="image1.jpg" alt="Image 1" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img class="preview" src="image2.jpg" alt="Image 2" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img class="preview" src="image3.jpg" alt="Image 3" onmouseover="upDate(this)" onmouseout="unDo()">
+    
+    <script src="script.js"></script>
+</body>
+</html>
